@@ -1,0 +1,14 @@
+body {
+    background-color: lightblue;
+}
+
+h {
+    color: red;
+    font-size: 50px;
+}
+
+p {
+    margin-left: 30px;
+    font-size: 30px;
+    color: blue;
+}

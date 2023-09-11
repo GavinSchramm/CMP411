@@ -1,0 +1,63 @@
+html {
+    background-color: rgb(194, 255, 200);
+}
+
+#sodaTitle {
+    margin-left: 600px;
+    margin-top: 50px;
+    font-size: 50px;
+}
+
+#desc {
+    margin-left: 420px;
+    margin-top: -50px;
+    font-weight: normal;
+    font-size: 30px;
+    height: 50px;
+}
+
+form {
+    position:absolute;
+    margin-left: 420px;
+    font-size: 20px;
+    width: 600px;
+}
+
+#nameBox, #email {
+    height: 35px;
+    width: 100%;
+    font-size: 20px;
+}
+
+#popNames {
+    font-size: 20px;
+    height: 35px;
+    width: 100%;
+}
+
+#nameBoxTitle, #emailTitle, #ddLabel, #rbLabel, #cbLabel, #comLabel {
+    color: black;
+    font-size: 25px;
+}
+
+#commentBox {
+    height: 200px;
+    margin-top: 10px;
+    width: 100%;
+    font-size: 18px;
+}
+
+#submitLabel {
+    position:absolute;
+    margin-left: 200px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+
+#submitButton {
+    position: absolute;
+    margin-top: 18px;
+    margin-bottom: 40px;
+    margin-left: 270px;
+    font-size: 20px;
+}

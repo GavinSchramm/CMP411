@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+
+    <link rel="styleSheet" href="hello.css">
+
+    <title>Document</title>
+
+    <head>
+        <h>Hello!</h>
+    </head>
+
+    <body>
+        <form>
+            <label for="fname">What's your name?</label>
+                <input type="text" id="fname" name="fname"><br>
+        </form>
+        <button type="button" onclick="getName()">Button</button>
+
+        <p id="answer"></p>
+
+        <script>
+        function getName(){
+            var gavin = document.getElementById("fname").value;
+            document.getElementById("answer").innerHTML = "Welcome " + gavin + "!";
+        }
+    </script>
+
+    </body>
+
+</html>

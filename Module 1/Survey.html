@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+    <link rel="styleSheet" href="Survey.css">
+
+    <title>Survey</title>
+    
+    <body>
+
+    <p id="sodaTitle">CMP 411 Survey</p><br>
+
+    <p id="desc">This survey is about soda. Answer to your knowledge.</p>
+
+    <form>
+
+        <!-- Text box for the user's name -->
+        <label id="nameBoxTitle" for="nameBoxTitle">First and last name</label><br>
+            <input type="text" id="nameBox" name="nameBox" required><br><br>
+
+        <!-- Text box for the user's email -->
+        <label id="emailTitle" for="emailTitle">E-mail address</label><br>
+            <input type="text" id="email" name="email" required><br><br><br>
+
+        <!-- Drop down Menu -->
+        <label for="sodaDropDown" id="ddLabel">What word do you call a carbonated drink?</label><br>
+        <label for="sodaDropDown"></label>
+        <select name="popNames" id="popNames">
+            <option value="pop">Pop</option>
+            <option value="soda">Soda</option>
+            <option value="coke">Coke</option>
+            <option value="softDrink">Soft Drink</option>
+        </select><br><br><br>
+
+        <!-- Radio buttons -->
+        <label for="soda1" id="rbLabel">Of the options, which soda would you pick?</label><br>
+        <input type="radio" id="soda1" name="soda" value="cokepepsi">
+        <label id="soda1Label" for="soda1">Coke/Pepsi</label><br>
+        <input type="radio" id="soda2" name="soda" value="mtdew">
+        <label id="soda2Label" for="soda2">Mountain Dew</label><br>
+        <input type="radio" id="soda3" name="soda" value="drpepper">
+        <label id="soda3Label" for="soda3">Dr. Peper</label><br>
+        <input type="radio" id="soda4" name="soda" value="fanta">
+        <label id="soda4Label" for="soda4">Fanta</label><br><br><br>
+
+        <!-- Check box -->
+        <label for="cb1" id="cbLabel">Of the options, which soda do you prefer?</label><br>
+        <input type="checkbox" id="cb1" name="cb" value="cb1">
+        <label id="cb1Label1" for="cb1">Grape</label><br>
+        <input type="checkbox" id="cb2" name="cb" value="cb2">
+        <label id="cb2Label2" for="cb2">Strawberry</label><br>
+        <input type="checkbox" id="cb3" name="cb" value="cb3">
+        <label id="cb1Label3" for="cb3">Cherry</label><br>
+        <input type="checkbox" id="cb4" name="cb" value="cb4">
+        <label id="cb1Label4" for="cb4">Orange</label><br>
+        <input type="checkbox" id="cb5" name="cb" value="cb5">
+        <label id="cb1Label5" for="cb5">Pineapple</label><br><br><br><br>
+
+        <!-- Text box for comments -->
+        <label for="commentBox" id="comLabel">Describe a time where you saw the most insane soda flavor.</label><br>
+        <textarea id="commentBox" value="comment"></textarea><br><br><br>
+
+        <!-- Submit Button -->
+        <label for="submit" id="submitLabel">Click below to submit</label><br>
+        <input type="submit" id="submitButton" name="submit" onclick="Submit()"><br><br><br><br><br><br>
+
+    </form>
+
+    </body>
+
+    <script>
+        let str = "";
+
+        function Submit(){
+            var namevar = document.getElementById("nameBox").value;
+            var emailvar = document.getElementById("email").value;
+
+            if(namevar !== str && emailvar !== str) {
+                return alert("Form has been submitted.");
+            }
+        }
+    </script>
+
+</html>

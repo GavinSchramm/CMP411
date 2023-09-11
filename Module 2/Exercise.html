@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <link rel="styleSheet" href="Exercise.css">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <head>
+        <h1>Sampling and Source Control</h1>
+        <p>This web page is responsive to how wide the page is</p>
+    </head>
+
+    <body>
+        <div class="row">
+            <div class="column" id="column1">
+                <p id="columns">Hyperlink</p>
+                <a href="https://scontent.foma1-2.fna.fbcdn.net/v/t39.30808-6/317641812_10225131340445208_5037277792191857320_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=5614bc&_nc_ohc=-HGTs1ngB3UAX9HjV77&_nc_ht=scontent.foma1-2.fna&oh=00_AfDOBrFkvwIl-BuF7eSDXV62mdQrfQJhn36_DAE0xyIlGw&oe=65023F6C" target="_blank">Click here for a picture of Gavin holding Zayla!
+                </a>
+            </div>
+            <div class="column" id="column2">
+                <p id="columns">A picture of my toddler cousin, Zayla</p>
+                <img src="../Media/Zayla.jpg" alt="Zayla" title="Zayla with tounge out" id="picture">
+            </div>
+            <div class="column" id="column3">
+                <p id="columns">A video of Zayla riding the walking convery belt</p>
+                <video id="video" controls>
+                    <source src="../Media/Zayla on ride.mp4" type="video/mp4" alt="Zayla on ride" title="Zayla riding the convery belt at the airport">
+                </video>
+            </div>
+            <div class="column" id="column4">
+                <p id="columns">Location</p>
+                <button onClick="getLocation()">Try me!</button>
+                <p id="locationText"></p>
+            </div>
+        </div>
+
+        <script>
+            var x = document.getElementById("locationText");
+            
+            function getLocation() {
+              if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+              } else { 
+                x.innerHTML = "Geolocation is not supported by this browser.";
+              }
+            }
+            
+            function showPosition(position) {
+              x.innerHTML = "Latitude: " + position.coords.latitude + 
+              "<br>Longitude: " + position.coords.longitude;
+            }
+            </script>
+
+    </body>
+
+</html>
