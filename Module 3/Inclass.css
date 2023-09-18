@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.left {
+    flex: 50%;
+}
+
+.right {
+    flex: 50%;
+}
+
+.everything{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 700px){
+    .right{
+        flex: 100%;
+    }
+}
