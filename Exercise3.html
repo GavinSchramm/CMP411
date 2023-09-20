@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <link rel="Stylesheet" href="Excercise3.css">
+    <script src="Excercise3.js"></script>
+    <title>Two tables</title>
+    <header>List Builder</header>
+    <body>
+        <div class="row">
+            <div class="column">
+                <h1>Write a word and pick a table</h1>
+                <form>
+                    <label for="wordBox" id="wordLabel">Write a word</label>
+                    <input type="text" id="wordBox" name="wordBox" required>
+                    <br>
+                    <label for="numberBox" id="numberLabel">Pick table 1 or 2</label>
+                    <input type="text" id="numberBox" name="numberBox" required>
+                    <br>
+                    </form>
+                <button onclick="addToList()" id="submit">Add to list</button>
+            </div>
+            <div class="column">
+                <h1>Table 1</h1>
+                <table id="table1" name="table1">
+                </table>
+                <button onclick="deleteTable1()" id="clear1">Clear list</button>
+            </div>
+            <div class="column">
+                <h1>Table 2</h1>
+                <table id="table2" name="table2">
+                </table>
+                <button onclick="deleteTable2()" id="clear2">Clear list</button>
+            </div>
+        </div>
+    </body>
+</html>
