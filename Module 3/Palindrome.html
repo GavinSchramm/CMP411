@@ -13,8 +13,11 @@
                     <label for="wordBox" id="wordLabel">Write a word</label>
                         <input type="text" id="wordBox" name="wordBox" required>
                     <br>
-                    <label for="numberBox" id="numberLabel">Pick table 1 or 2</label>
+                    <label for="numberBox" id="numberLabel">Pick table 1 or 2 or 3</label>
                         <input type="text" id="tableBox" name="tableBox" required>
+                    <br>
+                    <label for="case" id="caseLabel">Case sensitive? Yes or No?</label>
+                        <input type="text" id="caseBox" name="caseBox" required>
                     <br>
                     </form>
                     <button onclick="addToList()" id="submit">Add to list</button>
@@ -24,21 +27,21 @@
                 <h2>Table 1</h2>
                     <table id="table1" name="table1">
                     </table>
-                <button onclick="deleteTable()" id="clear1">Clear list</button>
+                <button onclick="deleteTable1()" id="clear1">Clear list</button>
             </div>
 
             <div class="column">
                 <h2>Table 2</h2>
                     <table id="table2" name="table2">
                     </table>
-                <button onclick="deleteTable()" id="clear2">Clear list</button>
+                <button onclick="deleteTable2()" id="clear2">Clear list</button>
             </div>
 
             <div class="column">
                 <h2>Table 3</h2>
                     <table id="table3" name="table3">
                     </table>
-                <button onclick="deleteTable()" id="clear3">Clear list</button>
+                <button onclick="deleteTable3()" id="clear3">Clear list</button>
             </div>
 
         </div>
