@@ -55,14 +55,20 @@ function caesar() {
 
         // takes the new string and does the ceaser encryption
         for (var ch in newText) {
-            var newLetter = newText.charCodeAt(ch) + 1;
-            if (newLetter - 1 == 32){ // checks to see if the character is a space
+            var newLetter = newText.charCodeAt(ch) + 15;
+            if(newLetter - 15 == 32){ // checks to see if the character is a space
                 encrText += " ";
-            } else {
-            var encrLetter = String.fromCharCode(newLetter);
-            encrText += encrLetter;
+            } else if(newLetter - 15 == 46){
+                encrText += ".";
+            } else if(newLetter > 122) {
+                newLetter = newLetter - 26;
+                var encrLetter = String.fromCharCode(newLetter);
+                encrText += encrLetter;
+            } else if(newLetter < 122) {
+                var encrLetter = String.fromCharCode(newLetter);
+                encrText += encrLetter;
             }
         }
-        document.getElementById("spicyText").innerHTML = encrText;
     }
+        document.getElementById("spicyText").innerHTML = encrText;
 }
