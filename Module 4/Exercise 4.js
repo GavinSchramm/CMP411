@@ -31,43 +31,36 @@ async function getBaconipsum() {
 
 // Function for encription
 function caesar() {
-    var encr = document.getElementById("encr").value;
     var plainText = document.getElementById("myFormattedData").innerHTML;
     var encrText = "";
     var alpha = "abcdefghijklmnopqrstuvwxyz .";
     var newText = "";
     
-    // Checks if the user wants it encrypted
-    if (encr == "no") {
-        document.getElementById("spicyText").innerHTML = plainText;
-    // if yes, do the encryption
-    } else if (encr == "yes") {
-        var lowerText = plainText.toLowerCase(); // set the string to lowercase
+    var lowerText = plainText.toLowerCase(); // set the string to lowercase
     
         // check each letter in the plain text to see if its in the alphabet and adds it to a new string
-        for (var i in lowerText){
-            for (var j in alpha){
-                if(lowerText[i].includes(alpha[j])) {
+    for (var i in lowerText){
+        for (var j in alpha){
+            if(lowerText[i].includes(alpha[j])) {
                 newText += lowerText[i];
-                }
             }
         }
+    }
 
         // takes the new string and does the ceaser encryption
-        for (var ch in newText) {
-            var newLetter = newText.charCodeAt(ch) + 15;
-            if(newLetter - 15 == 32){ // checks to see if the character is a space
-                encrText += " ";
-            } else if(newLetter - 15 == 46){
-                encrText += ".";
-            } else if(newLetter > 122) {
-                newLetter = newLetter - 26;
-                var encrLetter = String.fromCharCode(newLetter);
-                encrText += encrLetter;
-            } else if(newLetter < 122) {
-                var encrLetter = String.fromCharCode(newLetter);
-                encrText += encrLetter;
-            }
+    for (var ch in newText) {
+        var newLetter = newText.charCodeAt(ch) + 15;
+        if(newLetter - 15 == 32){ // checks to see if the character is a space
+            encrText += " ";
+        } else if(newLetter - 15 == 46){
+            encrText += ".";
+        } else if(newLetter > 122) {
+            newLetter = newLetter - 26;
+            var encrLetter = String.fromCharCode(newLetter);
+            encrText += encrLetter;
+        } else if(newLetter < 122) {
+            var encrLetter = String.fromCharCode(newLetter);
+            encrText += encrLetter;
         }
     }
         document.getElementById("spicyText").innerHTML = encrText;
