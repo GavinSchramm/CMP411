@@ -6,14 +6,14 @@ async function getQuote() {
     var length = document.getElementById("paraLength").value;
 
     if (length == 1) {
-        maxLength = 70;
+        maxLength = 100;
         myString = myString + "maxLength=70";
     } else if (length == 2) {
-        minLength = 70;
-        maxLength = 110;
+        minLength = 100;
+        maxLength = 210;
         myString = myString + "minLength=70&maxLength=110";
     } else if (length == 3) {
-        minLength = 110;
+        minLength = 210;
         myString = myString + "minLength=100";
     }
 
@@ -23,8 +23,6 @@ async function getQuote() {
 
         var quote = jsonData["content"];
         var author = jsonData["author"];
-
-    alert(myString);
 
     document.getElementById("quote").innerHTML = quote;
 
