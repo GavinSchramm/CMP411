@@ -1,6 +1,7 @@
 <!doctype html>
 <html lang="en" data-bs-theme="auto">
   <head><script src="../assets/js/color-modes.js"></script>
+    <script src="Exercise 5.js"></script>
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -210,7 +211,18 @@
         <h2 class="display-5">Generate Quote</h2>
         <p class="lead">Pick how long of a quote to bring.</p>
       </div>
-      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;"></div>
+      <div class="bg-body-tertiary shadow-sm mx-auto" style="width: 80%; height: 300px; border-radius: 21px 21px 0 0;">
+        <br>
+        <label for="paraLength" style="color:black">How long of a Quote??</label>
+        <br>
+            <select id="paraLength">
+                <option value="1">Short Quote</option>
+                <option value="2">Mid-Length Quote</option>
+                <option value="3">Long Quote</option>
+            </select>
+            <br> <br>
+        <button type="button" id="submit" onclick="getQuote()">Push for Quote</button>
+      </div>
     </div>
   </div>
 
