@@ -9,11 +9,15 @@ function getItems() {
 }
 
 function addItem() {
-    const addNameTextbox = document.getElementById('add-name');
+    const song = document.getElementById('song');
+    const artist = document.getElementById('artist');
+    const rating = document.getElementById('rating');
 
     const item = {
         isComplete: false,
-        name: addNameTextbox.value.trim()
+        songName: song.value.trim(),
+        artistName: artist.value.trim(),
+        ratingScore: rating.value.trim()
     };
 
     fetch(uri, {
@@ -43,9 +47,10 @@ function deleteItem(id) {
 function displayEditForm(id) {
     const item = todos.find(item => item.id === id);
 
-    document.getElementById('edit-name').value = item.name;
+    document.getElementById('edit-songName').value = item.name;
+    document.getElementById('edit-artistName').value = item.name;
+    document.getElementById('edit-rating').value = item.name;
     document.getElementById('edit-id').value = item.id;
-    document.getElementById('edit-isComplete').checked = item.isComplete;
     document.getElementById('editForm').style.display = 'block';
 }
 
@@ -78,13 +83,13 @@ function closeInput() {
 }
 
 function _displayCount(itemCount) {
-    const name = (itemCount === 1) ? 'to-do' : 'to-dos';
+    const name = (itemCount === 1) ? 'object' : 'objects';
 
     document.getElementById('counter').innerText = `${itemCount} ${name}`;
 }
 
 function _displayItems(data) {
-    const tBody = document.getElementById('todos');
+    const tBody = document.getElementById('songList');
     tBody.innerHTML = '';
 
     _displayCount(data.length);
@@ -92,10 +97,10 @@ function _displayItems(data) {
     const button = document.createElement('button');
 
     data.forEach(item => {
-        let isCompleteCheckbox = document.createElement('input');
-        isCompleteCheckbox.type = 'checkbox';
-        isCompleteCheckbox.disabled = true;
-        isCompleteCheckbox.checked = item.isComplete;
+        //let isCompleteCheckbox = document.createElement('input');
+        //isCompleteCheckbox.type = 'checkbox';
+        //isCompleteCheckbox.disabled = true;
+        //isCompleteCheckbox.checked = item.isComplete;
 
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';
@@ -108,16 +113,21 @@ function _displayItems(data) {
         let tr = tBody.insertRow();
 
         let td1 = tr.insertCell(0);
-        td1.appendChild(isCompleteCheckbox);
+        let textNode1 = document.createTextNode(item.songName);
+        td1.appendChild(textNode);
 
         let td2 = tr.insertCell(1);
-        let textNode = document.createTextNode(item.name);
+        let textNode2 = document.createTextNode(item.artistName);
         td2.appendChild(textNode);
 
-        let td3 = tr.insertCell(2);
+        let td2 = tr.insertCell(2);
+        let textNode3 = document.createTextNode(item.rating);
+        td2.appendChild(textNode);
+
+        let td3 = tr.insertCell(3);
         td3.appendChild(editButton);
 
-        let td4 = tr.insertCell(3);
+        let td4 = tr.insertCell(4);
         td4.append(deleteButton);
     });
 
