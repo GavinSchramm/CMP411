@@ -1,0 +1,71 @@
+{
+  "Version": 1,
+  "Hash": "iP99x0KrfBvYVrCG0eY9JZfwho1YYibXlC//W4JWclA=",
+  "Source": "MusicApi",
+  "BasePath": "_content/MusicApi",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [
+    {
+      "Name": "MusicApi\\wwwroot",
+      "Source": "MusicApi",
+      "ContentRoot": "C:\\Users\\gavin\\OneDrive\\Desktop\\CMP 411\\Module 6\\Assignment\\MusicApi\\wwwroot\\",
+      "BasePath": "_content/MusicApi",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\Users\\gavin\\OneDrive\\Desktop\\CMP 411\\Module 6\\Assignment\\MusicApi\\wwwroot\\Index.html",
+      "SourceId": "MusicApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gavin\\OneDrive\\Desktop\\CMP 411\\Module 6\\Assignment\\MusicApi\\wwwroot\\",
+      "BasePath": "_content/MusicApi",
+      "RelativePath": "Index.html",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Index.html"
+    },
+    {
+      "Identity": "C:\\Users\\gavin\\OneDrive\\Desktop\\CMP 411\\Module 6\\Assignment\\MusicApi\\wwwroot\\MusicScript.js",
+      "SourceId": "MusicApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gavin\\OneDrive\\Desktop\\CMP 411\\Module 6\\Assignment\\MusicApi\\wwwroot\\",
+      "BasePath": "_content/MusicApi",
+      "RelativePath": "MusicScript.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\MusicScript.js"
+    },
+    {
+      "Identity": "C:\\Users\\gavin\\OneDrive\\Desktop\\CMP 411\\Module 6\\Assignment\\MusicApi\\wwwroot\\MusicStyle.css",
+      "SourceId": "MusicApi",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gavin\\OneDrive\\Desktop\\CMP 411\\Module 6\\Assignment\\MusicApi\\wwwroot\\",
+      "BasePath": "_content/MusicApi",
+      "RelativePath": "MusicStyle.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\MusicStyle.css"
+    }
+  ]
+}
