@@ -1,4 +1,4 @@
-const uri = 'api/todoitems';
+const uri = 'api/MusicItems';
 let todos = [];
 
 function getItems() {
@@ -14,10 +14,9 @@ function addItem() {
     const rating = document.getElementById('rating');
 
     const item = {
-        isComplete: false,
         songName: song.value.trim(),
         artistName: artist.value.trim(),
-        ratingScore: rating.value.trim()
+        rating: rating.value.trim()
     };
 
     fetch(uri, {
@@ -55,11 +54,15 @@ function displayEditForm(id) {
 }
 
 function updateItem() {
+    const song = document.getElementById('song').value;
+    const artist = document.getElementById('artist').value;
+    const rating = document.getElementById('rating').value;
     const itemId = document.getElementById('edit-id').value;
     const item = {
         id: parseInt(itemId, 10),
-        isComplete: document.getElementById('edit-isComplete').checked,
-        name: document.getElementById('edit-name').value.trim()
+        songName: song.value.trim(),
+        artistName: artist.value.trim(),
+        rating: rating.value.trim()
     };
 
     fetch(`${uri}/${itemId}`, {
@@ -97,10 +100,6 @@ function _displayItems(data) {
     const button = document.createElement('button');
 
     data.forEach(item => {
-        //let isCompleteCheckbox = document.createElement('input');
-        //isCompleteCheckbox.type = 'checkbox';
-        //isCompleteCheckbox.disabled = true;
-        //isCompleteCheckbox.checked = item.isComplete;
 
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';
@@ -114,21 +113,21 @@ function _displayItems(data) {
 
         let td1 = tr.insertCell(0);
         let textNode1 = document.createTextNode(item.songName);
-        td1.appendChild(textNode);
+        td1.appendChild(textNode1);
 
         let td2 = tr.insertCell(1);
         let textNode2 = document.createTextNode(item.artistName);
-        td2.appendChild(textNode);
+        td2.appendChild(textNode2);
 
-        let td2 = tr.insertCell(2);
+        let td3 = tr.insertCell(2);
         let textNode3 = document.createTextNode(item.rating);
-        td2.appendChild(textNode);
+        td3.appendChild(textNode3);
 
-        let td3 = tr.insertCell(3);
-        td3.appendChild(editButton);
+        let td4 = tr.insertCell(3);
+        td4.appendChild(editButton);
 
-        let td4 = tr.insertCell(4);
-        td4.append(deleteButton);
+        let td5 = tr.insertCell(4);
+        td5.append(deleteButton);
     });
 
     todos = data;
