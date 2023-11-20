@@ -30,7 +30,9 @@ function addItem() {
         .then(response => response.json())
         .then(() => {
             getItems();
-            addNameTextbox.value = '';
+            document.getElementById("song").value = '';
+            document.getElementById("artist").value = '';
+            document.getElementById("rating").value = '';
         })
         .catch(error => console.error('Unable to add item.', error));
 }
@@ -46,17 +48,17 @@ function deleteItem(id) {
 function displayEditForm(id) {
     const item = todos.find(item => item.id === id);
 
-    document.getElementById('edit-songName').value = item.name;
-    document.getElementById('edit-artistName').value = item.name;
-    document.getElementById('edit-rating').value = item.name;
+    document.getElementById('edit-songName').value = item.songName;
+    document.getElementById('edit-artistName').value = item.artistName;
+    document.getElementById('edit-rating').value = item.rating;
     document.getElementById('edit-id').value = item.id;
     document.getElementById('editForm').style.display = 'block';
 }
 
 function updateItem() {
-    const song = document.getElementById('song').value;
-    const artist = document.getElementById('artist').value;
-    const rating = document.getElementById('rating').value;
+    const song = document.getElementById('edit-songName').value;
+    const artist = document.getElementById('edit-artistName').value;
+    const rating = document.getElementById('edit-rating').value;
     const itemId = document.getElementById('edit-id').value;
     const item = {
         id: parseInt(itemId, 10),
@@ -99,7 +101,7 @@ function _displayItems(data) {
 
     const button = document.createElement('button');
 
-    data.forEach(item => {
+    data.forEach(item => {        
 
         let editButton = button.cloneNode(false);
         editButton.innerText = 'Edit';
