@@ -56,9 +56,9 @@ function displayEditForm(id) {
 }
 
 function updateItem() {
-    const song = document.getElementById('edit-songName').value;
-    const artist = document.getElementById('edit-artistName').value;
-    const rating = document.getElementById('edit-rating').value;
+    const song = document.getElementById('edit-songName');
+    const artist = document.getElementById('edit-artistName');
+    const rating = document.getElementById('edit-rating');
     const itemId = document.getElementById('edit-id').value;
     const item = {
         id: parseInt(itemId, 10),
@@ -66,7 +66,7 @@ function updateItem() {
         artistName: artist.value.trim(),
         rating: rating.value.trim()
     };
-
+    
     fetch(`${uri}/${itemId}`, {
         method: 'PUT',
         headers: {
