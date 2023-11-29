@@ -1,4 +1,4 @@
-const uri = 'api/MusicItems';
+const uri = 'api/MusicItems'; //Alec Demo
 let todos = [];
 
 function getItems() {

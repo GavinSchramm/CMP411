@@ -12,6 +12,7 @@
           "Microsoft.EntityFrameworkCore.InMemory": "7.0.13",
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.12",
           "Microsoft.EntityFrameworkCore.Tools": "7.0.12",
+          "Microsoft.TypeScript.MSBuild": "5.3.2",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "7.0.10",
           "Swashbuckle.AspNetCore": "6.4.0"
         },
@@ -1415,6 +1416,7 @@
           }
         }
       },
+      "Microsoft.TypeScript.MSBuild/5.3.2": {},
       "Microsoft.VisualStudio.Web.CodeGeneration/7.0.10": {
         "dependencies": {
           "Microsoft.Extensions.DependencyInjection": "7.0.0",
@@ -3307,6 +3309,13 @@
       "sha512": "sha512-N4KeF3cpcm1PUHym1RmakkzfkEv3GRMyofVv40uXsQhCQeglr2OHNcUk2WOG51AKpGO8ynGpo9M/kFXSzghwug==",
       "path": "microsoft.sqlserver.server/1.0.0",
       "hashPath": "microsoft.sqlserver.server.1.0.0.nupkg.sha512"
+    },
+    "Microsoft.TypeScript.MSBuild/5.3.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-YZCpi5h1RKzykPr4ObCKiHwoaqapwYZa+8yMpujdCFUgc3LScujVoTHFPfYu3Z5/iIRPBi9E54cWWvuPDnBpCA==",
+      "path": "microsoft.typescript.msbuild/5.3.2",
+      "hashPath": "microsoft.typescript.msbuild.5.3.2.nupkg.sha512"
     },
     "Microsoft.VisualStudio.Web.CodeGeneration/7.0.10": {
       "type": "package",

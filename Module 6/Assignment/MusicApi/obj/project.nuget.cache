@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "a5/R7yynqSW8ezdT9HIWy2FyCkj5UtKncWJtCiGzCpupKXhTr66xQxGHfvtdJpot3IxI09QkRV+ECh/RuUlU0g==",
+  "dgSpecHash": "GRf7fH+cRWuhQa9TgkyyZvNLJC238YLHuikx0FpAXdaz5GnZLwaSAjqjDBR2yXm2VOLg7s8+hcASD1cdLRzmXg==",
   "success": true,
   "projectFilePath": "C:\\Users\\gavin\\OneDrive\\Desktop\\CMP 411\\Module 6\\Assignment\\MusicApi\\MusicApi.csproj",
   "expectedPackageFiles": [
@@ -109,6 +109,7 @@
     "C:\\Users\\gavin\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\gavin\\.nuget\\packages\\microsoft.openapi\\1.4.3\\microsoft.openapi.1.4.3.nupkg.sha512",
     "C:\\Users\\gavin\\.nuget\\packages\\microsoft.sqlserver.server\\1.0.0\\microsoft.sqlserver.server.1.0.0.nupkg.sha512",
+    "C:\\Users\\gavin\\.nuget\\packages\\microsoft.typescript.msbuild\\5.3.2\\microsoft.typescript.msbuild.5.3.2.nupkg.sha512",
     "C:\\Users\\gavin\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration\\7.0.10\\microsoft.visualstudio.web.codegeneration.7.0.10.nupkg.sha512",
     "C:\\Users\\gavin\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.core\\7.0.10\\microsoft.visualstudio.web.codegeneration.core.7.0.10.nupkg.sha512",
     "C:\\Users\\gavin\\.nuget\\packages\\microsoft.visualstudio.web.codegeneration.design\\7.0.10\\microsoft.visualstudio.web.codegeneration.design.7.0.10.nupkg.sha512",

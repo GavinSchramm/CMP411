@@ -509,3 +509,4 @@ C:\Users\gavin\OneDrive\Desktop\CMP 411\Module 6\Assignment\MusicApi\obj\Debug\n
 C:\Users\gavin\OneDrive\Desktop\CMP 411\Module 6\Assignment\MusicApi\obj\Debug\net7.0\MusicApi.genruntimeconfig.cache
 C:\Users\gavin\OneDrive\Desktop\CMP 411\Module 6\Assignment\MusicApi\obj\Debug\net7.0\ref\MusicApi.dll
 C:\Users\gavin\OneDrive\Desktop\CMP 411\Module 6\Assignment\MusicApi\bin\Debug\net7.0\MusicApi.staticwebassets.runtime.json
+C:\Users\gavin\OneDrive\Desktop\CMP 411\Module 6\Assignment\MusicApi\obj\Debug\net7.0\MusicApi.sourcelink.json
