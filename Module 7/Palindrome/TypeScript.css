@@ -1,0 +1,35 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-color: rgb(233, 204, 142);
+}
+
+header {
+    font-weight: bolder;
+    font-size: 40px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1920px) {
+    .column {
+        flex: 25%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .column {
+        flex: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column {
+        flex: 100%;
+    }
+}
